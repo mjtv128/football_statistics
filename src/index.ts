@@ -6,13 +6,6 @@ reader.read()
 
 console.log(reader.data[0][0])
 
-const printMatchResult = (): MatchResult => {
-    if (match[5] === 'H'){
-        return MatchResult.HomeWin
-    }
-    return MatchResult.AwayWin
-}
-
 let manUnitedWins = 0 
 
 for (let match of reader.data) {
