@@ -21,6 +21,3 @@ export class Summary{
 }
 
 
-new Summary(new WingsAnalysis(), new ConsoleReport());
-
-
