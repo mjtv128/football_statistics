@@ -1,6 +1,6 @@
 import {MatchData} from './MatchData'
 
-export interface Analyzer {
+export interface Analyser {
     run(matches: MatchData[]): string 
 }
 
@@ -10,7 +10,7 @@ export interface OutputTarget{
 
 export class Summary{
     //KEY
-    constructor(public analyzer: Analyzer, public outputTarget: OutputTarget){}
+    constructor(public analyzer: Analyser, public outputTarget: OutputTarget){}
 }
 
 
