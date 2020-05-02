@@ -8,11 +8,8 @@ const csvFileReader = new CsvFileReader('football.csv')
 //Create an instance of MatchReader and pass in something 
 //satisfying the 'Data Reader"interface
 const matchReader = new MatchReader(csvFileReader)
-//just creating is not enough
-//you need to load it to tell it to assign it to type prop
-matchReader.load()
 
-//matchReader.matches <-- info to be iterated
+matchReader.load()
 
 let manUnitedWins = 0 
 
