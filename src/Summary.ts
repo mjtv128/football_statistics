@@ -11,6 +11,13 @@ export interface OutputTarget{
 export class Summary{
     //KEY
     constructor(public analyzer: Analyser, public outputTarget: OutputTarget){}
+
+    buildAndPrintReport(matches: MatchData[]): void{
+        const output = this.analyzer.run(matches)
+
+        this.outputTarget.print(output)
+    }
+
 }
 
 
